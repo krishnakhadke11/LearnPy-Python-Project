@@ -103,40 +103,42 @@ def evaluate():
 def comments():
     return render_template('TableOfContent/comments.html')
 
-# @app.route('/dictionary')
-# def dictionary():
-#     return render_template('TableOfContent/dictionary.html')
+@app.route('/dictionary')
+def dictionary():
+    return render_template('TableOfContent/Dictionary.html')
 
-@app.route('/functions')
+@app.route('/function')
 def functions():
     return render_template('TableOfContent/function.html')
 
-# @app.route('/lists')
-# def lists():
-#     return render_template('TableOfContent/lists.html')
+@app.route('/lists')
+def lists():
+    return render_template('TableOfContent/lists.html')
 
 @app.route('/loops')
 def loops():
     return render_template('TableOfContent/loops.html')
 
-# @app.route('/numbers')
-# def numbers():
-#     return render_template('TableOfContent/numbers.html')
+@app.route('/numbers')
+def numbers():
+    return render_template('TableOfContent/numbers.html')
 
-# @app.route('/sets')
-# def sets():
-#     return render_template('TableOfContent/sets.html')
+@app.route('/set')
+def sets():
+    return render_template('TableOfContent/set.html')
 
-# @app.route('/string')
-# def string():
-#     return render_template('TableOfContent/string.html')
+@app.route('/lambda')
+def Lambda():
+    return render_template('TableOfContent/lambda.html')    
 
-# @app.route('/tuples')
-# def tuples():
-#     return render_template('TableOfContent/tuple.html')
+@app.route('/arrays')
+def arrays():
+    return render_template('TableOfContent/arrays.html')   
 
-# @app.route('/userinput')
-# def userinput():
-#     return render_template('TableOfContent/userinput.html')
+
+@app.route('/tuples')
+def tuples():
+    return render_template('TableOfContent/tuples.html')
+
 if __name__=='__main__':
     app.run(debug=False)
