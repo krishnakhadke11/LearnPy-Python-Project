@@ -20,8 +20,8 @@ class quizQues(db.Model):
     option3 = db.Column(db.String(50), nullable=False)
     option4 = db.Column(db.String(50), nullable=False)
 
-    def __repr__(self) -> str:  
-        return f"{self.question},{self.option1},{self.option2},{self.option3},{self.option4}"
+    # def __repr__(self) -> str:  
+    #     return f"{self.question},{self.option1},{self.option2},{self.option3},{self.option4}"
 def dbToDict(questionsdb):
     original_questions={}
     for i in questionsdb:
